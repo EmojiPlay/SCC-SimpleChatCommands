@@ -1,0 +1,11 @@
+{
+	"title"		:	"SCC (Simple Chat Commands)",
+	"type"		:	"tool",
+	"tags"		:	[ "fun"],
+	"ignore"	:
+	[
+		"*.psd",
+		"*.vcproj",
+		"*.svn*"
+	]
+}
