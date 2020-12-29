@@ -1,7 +1,7 @@
 
 hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
 
-	if text == "!hi" then
+	if text == "!hi" then --Yo, secret command o_o
 		print("Hi!")
 	end
 
