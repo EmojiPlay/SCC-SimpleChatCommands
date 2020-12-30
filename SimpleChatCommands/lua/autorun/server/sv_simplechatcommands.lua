@@ -20,6 +20,11 @@ hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
 		ply:GiveAmmo( 200, "Buckshot", true)
 	end
 
+	if text == "!respawn" then
+		ply:Kill()
+		ply:Spawn()
+	end
+
 	if text == "!smggrenade" then
 		ply:GiveAmmo( 1, "SMG1_Grenade", true)
 	end
@@ -71,6 +76,10 @@ hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
 	end
 
 	if text == "!commands2" then
-		ply:ChatPrint("!crossbow - Gives you a crossbow \n !ar2 - Gives you an AR2 \n !ar2alt - Gives you an AR2 alt shot \n !crowbar - Gives you a crowbar \n !grenade - Gives you a grenade \n !stunstick - Gives you a stunstick \n !gravitygun - Gives you a Gravity Gun")
+		ply:ChatPrint("!crossbow - Gives you a crossbow \n !ar2 - Gives you an AR2 \n !ar2alt - Gives you an AR2 alt shot \n !crowbar - Gives you a crowbar \n !grenade - Gives you a grenade \n !stunstick - Gives you a stunstick \n !commands3 - Page 3")
+	end
+
+	if text == "!commands3" then
+		ply:ChatPrint("!gravitygun - Gives you a Gravity Gun \n !respawn - Respawns you")
 	end
 end)
