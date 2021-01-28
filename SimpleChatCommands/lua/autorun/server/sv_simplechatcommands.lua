@@ -1,3 +1,4 @@
+
 hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
 	if text == "!hi" then
 		print("Hi!")
