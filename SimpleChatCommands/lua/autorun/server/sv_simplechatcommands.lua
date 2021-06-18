@@ -1,5 +1,5 @@
-
 hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
+
 	if text == "!hi" then
 		print("Hi!")
 	end
@@ -15,14 +15,14 @@ hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
 		ply:GiveAmmo( 200, "Pistol", true)
 	end
 
-	if text == "!shotgun" then
-		ply:Give("weapon_shotgun", true)
-		ply:GiveAmmo( 200, "Buckshot", true)
-	end
-
 	if text == "!respawn" then
 		ply:Kill()
 		ply:Spawn()
+	end
+
+	if text == "!shotgun" then
+		ply:Give("weapon_shotgun", true)
+		ply:GiveAmmo( 200, "Buckshot", true)
 	end
 
 	if text == "!smggrenade" then
@@ -71,6 +71,111 @@ hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
 		ply:GiveAmmo( 10, "RPG_Round", true)
 	end
 
+	if text == "!73w" then
+		ply:Give("m9k_winchester73", true)
+		ply:GiveAmmo( 200, "AirboatGun", true)
+	end
+
+	if text == "!acr" then
+		ply:Give("m9k_acr", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!ak47" then
+		ply:Give("m9k_ak47", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!ak74" then
+		ply:Give("m9k_ak74", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!amd65" then
+		ply:Give("m9k_amd65", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!an94" then
+		ply:Give("m9k_an94", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!asval" then
+		ply:Give("m9k_val", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!f2000" then
+		ply:Give("m9k_f2000", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!famas" then
+		ply:Give("m9k_f2000", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!fnfal" then
+		ply:Give("m9k_fal", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!g36" then
+		ply:Give("m9k_g36", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!hk416" then
+		ply:Give("m9k_m416", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!g3a3" then
+		ply:Give("m9k_g3a3", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!l85" then
+		ply:Give("m9k_l85", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!m14" then
+		ply:Give("m9k_m14sp", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!m16a4a" then
+		ply:Give("m9k_m16a4_acog")
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!m4a1" then
+		ply:Give("m9k_m4a1", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!scar" then
+		ply:Give("m9k_scar", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!sr3m" then
+		ply:Give("m9k_vikhr", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!auga3" then
+		ply:Give("m9k_auga3", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!tar21" then
+		ply:Give("m9k_tar21", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
 	if text == "!commands" then
 		ply:ChatPrint( "All commands: \n!smg - Gives you a smg \n !pistol - Gives you a pistol \n !shotgun - Gives you a shotgun \n !smggrenade - Gives you a grenade for smg \n !357 - Gives you a Revolver \n !rpg - Gives you a RPG \n !commands2 - Page 2")
 	end
@@ -82,4 +187,7 @@ hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
 	if text == "!commands3" then
 		ply:ChatPrint("!gravitygun - Gives you a Gravity Gun \n !respawn - Respawns you")
 	end
+
+	
 end)
+
