@@ -178,4 +178,5 @@ hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
 
 	if text == "!scccredits" then
 		ply:ChatPrint("SimpleChatCommands \n By: That Emoji \n List of commands is on GitHub")
+	end
 end)
