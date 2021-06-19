@@ -176,18 +176,6 @@ hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
 		ply:GiveAmmo( 200, "AR2", true)
 	end
 
-	if text == "!commands" then
-		ply:ChatPrint( "All commands: \n!smg - Gives you a smg \n !pistol - Gives you a pistol \n !shotgun - Gives you a shotgun \n !smggrenade - Gives you a grenade for smg \n !357 - Gives you a Revolver \n !rpg - Gives you a RPG \n !commands2 - Page 2")
-	end
-
-	if text == "!commands2" then
-		ply:ChatPrint("!crossbow - Gives you a crossbow \n !ar2 - Gives you an AR2 \n !ar2alt - Gives you an AR2 alt shot \n !crowbar - Gives you a crowbar \n !grenade - Gives you a grenade \n !stunstick - Gives you a stunstick \n !commands3 - Page 3")
-	end
-
-	if text == "!commands3" then
-		ply:ChatPrint("!gravitygun - Gives you a Gravity Gun \n !respawn - Respawns you")
-	end
-
-	
+	if text == "!scccredits" then
+		ply:ChatPrint("SimpleChatCommands \n By: That Emoji \n List of commands is on GitHub")
 end)
-
