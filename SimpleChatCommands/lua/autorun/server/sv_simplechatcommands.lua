@@ -176,7 +176,42 @@ hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
 		ply:GiveAmmo( 200, "AR2", true)
 	end
 
+	if text == "!ares" then
+		ply:Give("m9k_ares_shrike", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!fg42" then
+		ply:Give("m9k_fg42", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!minigun" then
+		ply:Give("m9k_minigun", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!bar" then
+		ply:Give("m9k_m1918bar", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!m249" then
+		ply:Give("m9k_m249lmg", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!m60" then
+		ply:Give("m9k_m60", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
+	if text == "!pkm" then
+		ply:Give("m9k_pkm", true)
+		ply:GiveAmmo( 200, "AR2", true)
+	end
+
 	if text == "!scccredits" then
-		ply:ChatPrint("SimpleChatCommands \n By: That Emoji \n List of commands is on GitHub")
+		ply:ChatPrint("SimpleChatCommands \n By: That Emoji \n List of commands is on GitHub \n Special thanks for @m1ven, for making a review on tiktok")
 	end
 end)
