@@ -108,11 +108,11 @@ hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
 
 	if text == "!f2000" then
 		ply:Give("m9k_f2000", true)
-		ply:GiveAmmo( 200, "AR2", true)
+		ply:GiveAmmo( 200, "SMG1", true)
 	end
 
 	if text == "!famas" then
-		ply:Give("m9k_f2000", true)
+		ply:Give("m9k_famas", true)
 		ply:GiveAmmo( 200, "AR2", true)
 	end
 
@@ -163,7 +163,7 @@ hook.Add("PlayerSay", "ChatCommands", function( ply,text,teamChat )
 
 	if text == "!sr3m" then
 		ply:Give("m9k_vikhr", true)
-		ply:GiveAmmo( 200, "AR2", true)
+		ply:GiveAmmo( 200, "SMG1", true)
 	end
 
 	if text == "!auga3" then
